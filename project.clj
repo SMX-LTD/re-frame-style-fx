@@ -1,4 +1,4 @@
-(defproject com.smxemail/re-frame-style-fx "0.0.1-SNAPSHOT"
+(defproject com.smxemail/re-frame-style-fx "0.0.1"
   :description "re-frame effects handlers for performing styling tasks."
   :url "https://github.com/SMX-LTD/re-frame-style-fx.git"
   :license {:name         "Eclipse Public License - v 1.0"
