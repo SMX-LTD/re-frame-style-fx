@@ -1,6 +1,6 @@
 (ns com.smxemail.re-frame-style-fx
   (:require
-    [cljs.spec :as s]
+    [cljs.spec.alpha :as s]
     [goog.style]
     [re-frame.core :refer [console dispatch reg-fx]]))
 
@@ -17,7 +17,7 @@
 (reg-fx
   :style/install
   (fn style-install-effect [options]
-    (when (= :cljs.spec/invalid (s/conform ::sequential-or-map options))
+    (when (= :cljs.spec.alpha/invalid (s/conform ::sequential-or-map options))
       (console :error (s/explain-str ::sequential-or-map options)))
     (cond
       (sequential? options)
@@ -43,7 +43,7 @@
 (reg-fx
   :style/uninstall
   (fn style-uninstall-effect [options]
-    (when (= :cljs.spec/invalid (s/conform ::sequential-or-map options))
+    (when (= :cljs.spec.alpha/invalid (s/conform ::sequential-or-map options))
       (console :error (s/explain-str ::sequential-or-map options)))
     (cond
       (sequential? options)
